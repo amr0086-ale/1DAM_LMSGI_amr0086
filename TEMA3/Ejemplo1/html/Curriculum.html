@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil Profesional</title>
+    <meta name="author" content="Alejandro Morales Rosas">
+    <meta name="description" content="Página personal creada con HTML">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ddf5dd;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, section {
+            margin: 30px;
+        }
+        header {
+            text-align: center;
+            background-color: #c1efb3;
+            padding: 20px;
+            border-bottom: 3px solid #94a3b8;
+        }
+        nav {
+            background-color: #ccfec7;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #0fb818;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        img {
+            border-radius: 10px;
+        }
+        blockquote {
+            font-style: italic;
+            background-color: #eef2ff;
+            border-left: 5px solid #71f163;
+            margin: 20px auto;
+            padding: 10px;
+            width: 60%;
+        }
+        hr {
+            border: 1px solid #ccc;
+            margin: 30px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #d4fec7;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 🔗 Menú de navegación -->
+    <nav>
+        <a href="#datos">Datos personales</a> |
+        <a href="#formacion">Formación</a> |
+        <a href="#habilidades">Habilidades</a> |
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- 🧍‍♂️ Sección 1: Encabezado -->
+    <header>
+        <h1>Mi Perfil Profesional</h1>
+        <blockquote>“Un poco de lo que soy.”</blockquote>
+    </header>
+
+    <hr>
+
+    <!-- 👤 Sección 2: Datos personales -->
+    <!-- Sección de datos personales -->
+    <section id="datos">
+        <header>
+        <h2 style="text-align: center;">Datos personales</h2>
+        </header>
+        <div style="justify-content: center; display: flex;">
+            <img src="..\img\fotoperfil.jpg" alt="Foto personal" title="Mi foto" width="200" height="200">
+            <ul>
+                <li><strong>Nombre:</strong></li>
+                <em>Alejandro Morales Rosas</em>
+                <li><strong>Edad:</strong></li>
+                <em>21 años</em>
+                <li><strong>Ciudad:</strong></li>
+                <em>Jaén, España</em>
+                <li><strong>Email:</strong></li>
+                <em><a href="mailto:alejandromoralesrosas2@mail.com">alejandromoralesrosas2@gmail.com</a></em>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- 🎓 Sección 3: Formación -->
+    <section id="formacion">
+        <header>
+        <h2 style="text-align: center;">Formación</h2>
+        </header>
+        <ol>
+            <li><strong>Grado Medio</strong> en <em>Sistemas Microinformáticos y Redes</em> - MEDAC Vandelvira</li>
+            <li><strong>Grado Superior</strong> en <em>Desarrollo de Aplicaciones Multiplataforma</em> - Davante MEDAC Jaén</li>
+        </ol>
+    </section>
+
+    <hr>
+
+    <!-- 💼 Sección 4: Habilidades e intereses -->
+    <section id="habilidades">
+        <header>
+        <h2 style="text-align: center;">Habilidades e intereses</h2>
+        </header>
+        <div>
+            <ul>
+                <li>Programación en <mark>HTML y CSS</mark></li>
+                <li>Trabajo en equipo y comunicación</li>
+                <li>Creatividad</li>
+                <li>Interés por la <em>fotografía</em> y el <em>diseño gráfico</em></li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- 🔗 Sección 5: Enlaces -->
+    <section style="text-align: center;" id="contacto">
+        <header>
+        <h2 style="text-align: center;">Contacto y enlaces</h2>
+        </header>
+        <p>Puedes visitar mi perfil profesional en:</p>
+        <p>
+            <a href="https://github.com/alemoralesystem" target="_blank">GitHub</a> |
+            <a href="https://www.linkedin.com/in/alejandro-morales-rosas-2b241b345" target="_blank">LinkedIn</a>
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- 🖼️ Sección 6: Contenido multimedia -->
+    <section id="multimedia">
+        <header>
+        <h2 style="text-align: center;">Ubicación del centro</h2>
+        </header>
+        <p><b><small>Centro de estudios:</small></b></p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.6559334572057!2d-3.7883115888565517!3d37.798102371862555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7dec3dd20ad%3A0x4fad82fdbe189c8!2sDavante%20MEDAC%20Aventura%20%F0%9F%A5%87%20Centro%20FP%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1759925287001!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade></iframe>" 
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p><small>© 2025 - Alejandro Morales Rosas | Ejercicio “Mi Perfil Profesional”</small></p>
+    </footer>
+
+</body>
+</html>
