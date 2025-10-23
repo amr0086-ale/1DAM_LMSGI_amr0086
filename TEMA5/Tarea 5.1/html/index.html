@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Perfil Profesional</title>
+    <meta name="author" content="Alejandro Morales Rosas">
+    <meta name="description" content="Página personal creada con HTML">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ddf5dd;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header, section {
+            margin: 30px;
+        }
+        header {
+            text-align: center;
+            background-color: #c1efb3;
+            padding: 20px;
+            border-bottom: 3px solid #94a3b8;
+        }
+        nav {
+            background-color: #ccfec7;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #0fb818;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        img {
+            border-radius: 10px;
+        }
+        blockquote {
+            font-style: italic;
+            background-color: #eef2ff;
+            border-left: 5px solid #71f163;
+            margin: 20px auto;
+            padding: 10px;
+            width: 60%;
+        }
+        hr {
+            border: 1px solid #ccc;
+            margin: 30px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #d4fec7;
+            margin-top: 40px;
+        }
+        table, th, td {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+            padding: 8px;
+            text-align: center;
+        }
+        fieldset {
+            border: 2px solid #0fb818;
+            padding: 10px;
+            background-color: white;
+        }   
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#datos">Datos personales</a> |
+        <a href="#recopilacion">Recopilacion de datos personales</a> |
+        <a href="#formacion">Formación</a> |
+        <a href="#habilidades">Habilidades</a> |
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <header>
+        <h1>Mi Perfil Profesional</h1>
+        <blockquote>“Un poco de lo que soy.”</blockquote>
+    </header>
+
+    <hr>
+
+    <section id="datos">
+        <header>
+        <h2 style="text-align: center;">Datos personales</h2>
+        </header>
+        <div style="justify-content: center; display: flex;">
+            <img src="..\img\fotoperfil.jpg" alt="Foto personal" title="Mi foto" width="200" height="200">
+            <ul>
+                <li><strong>Nombre:</strong></li>
+                <em>Alejandro Morales Rosas</em>
+                <li><strong>Edad:</strong></li>
+                <em>21 años</em>
+                <li><strong>Ciudad:</strong></li>
+                <em>Jaén, España</em>
+                <li><strong>Email:</strong></li>
+                <em><a href="mailto:alejandromoralesrosas2@gmail.com">alejandromoralesrosas2@gmail.com</a></em>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="recopilacion">
+        <header>
+        <h2 style="text-align: center;">Recopilacion de datos personales</h2>
+        </header>
+
+        <form action="proceso.php" method="post"> <!-- La informacion de los datos se manda a el archivo proceso php -->
+    <fieldset>
+        <legend>Datos Pesonales</legend>
+        Nombre: <input type="text" name="nombre" required><br><br> <!-- El atributo required hace que el campo sea obligatorio -->
+        Apellidos: <input type="text" name="apellido" required><br><br> <!-- Tipo de dato texto -->
+        Edad: <input type="number" name="edad"><br><br> <!-- Tipo de dato numerico -->
+        Genero: 
+        <select name="genero"> <!-- Menu desplegable para seleccionar el genero -->
+            <option value="masculino">Masculino</option> 
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br><br>
+    </fieldset>
+    <fieldset> <!-- Agrupa los elementos relacionados en un formulario -->
+        <legend>Contacto</legend>
+        Correo Electronico: <input type="text" name="nombre" required><br><br>
+        Direccion: <input type="text" name="apellido" required><br><br>
+        Codigo Postal: <input type="number" name="edad"><br><br>
+        Ciudad: 
+        <select name="genero"> <!-- Menu desplegable para seleccionar la ciudad -->
+            <option value="jaen" aria-checked="true">Jaén</option> <!-- Valor por defecto -->
+            <option value="cordoba">Cordoba</option>
+            <option value="sevilla">Sevilla</option>
+            <option value="granada">Granada</option>
+            <option value="almeria">Almeria</option>
+            <option value="huelva">Huelva</option>
+            <option value="cadiz">Cadiz</option>
+            <option value="malaga">Malaga</option>
+        </select><br><br>
+        Contraseña: <input type="password" name="password" required><br><br> <!-- Tipo de dato contraseña -->
+
+    </fieldset><br>
+
+    <fieldset>
+        <legend>Datos de Interés</legend>
+        ¿Estás casado?:<input type="radio" name="casado" value="si"> Sí <input type="radio" name="casado" value="no"> No <!-- Opcion de seleccion unica -->
+        
+        <br><br>
+        Hobbies:
+        <input type="checkbox" name="baloncesto">Baloncesto <!-- Opcion de seleccion multiple -->
+        <input type="checkbox" name="futbol">Fútbol 
+        <input type="checkbox" name="ciclismo">Cine
+        <input type="checkbox" name="lectura">Lectura
+        <input type="checkbox" name="musica">Musica
+        <input type="checkbox" name="ciclismo">Ciclismo
+        <input type="checkbox" name="correr">Correr
+<br>
+    </fieldset><br>
+    <fieldset>
+        <legend>Comentaros adicionales</legend><br>
+        <textarea name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tus comentarios..."></textarea> <!-- Area de texto para comentarios -->
+    </fieldset><br>
+
+            <input type="submit" value="Enviar"> <!-- Boton para enviar el formulario -->
+            <input type="reset" value="Borrar"> <!-- Boton para reiniciar el formulario -->
+    </form>
+    </section>
+
+    <hr>
+
+    <section id="formacion">
+        <header>
+        <h2 style="text-align: center;">Formación</h2>
+        </header>
+        <ol>
+            <li><strong>Grado Medio</strong> en <em>Sistemas Microinformáticos y Redes</em> - MEDAC Vandelvira</li>
+            <li><strong>Grado Superior</strong> en <em>Desarrollo de Aplicaciones Multiplataforma</em> - Davante MEDAC Jaén</li>
+        </ol>
+<br><br>
+        <table> <!-- Tabla para el horario -->
+        <caption style="background-color: #71f163;"><b>Horario Desarrollo de Aplicaciones Multiplataforma</b></caption> <!-- Titulo de la tabla -->
+        <thead>
+            <tr style="background-color: #0fb818;"> <!-- Fila de encabezado -->
+                <th>Hora</th> <!-- Encabezado de la primera columna -->
+                <th>Lunes</th> <!-- Encabezado de las demas columnas -->
+                <th>Martes</th>
+                <th>Miércoles</th>
+                <th>Jueves</th>
+                <th>Viernes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr style="background-color: white;"> <!-- Fila de datos -->
+                <th style="background-color: #71f163;">8:30-9:30</th> <!-- Encabezado de la fila -->
+                <td rowspan="3">Lenguajes de marcas y sistemas de gestión de información</td> <!-- Celdas con atributo rowspan para unir filas -->
+                <td rowspan="3">Sistemas informáticos</td>
+                <td rowspan="3">Entornos de desarrollo</td>
+                <td rowspan="3">Base de datos</td>
+                <td rowspan="3">Programacion</td>
+            </tr>
+            <tr>
+                <th style="background-color: #71f163;">9:30-10:30</th>
+            </tr>
+            <tr>
+                <th style="background-color: #71f163;">9:30-10:30</th>
+            </tr>
+            <tr style="background-color: #0fb818;">
+                <th colspan="6">Descanso</th> <!-- Fila de descanso que abarca todas las columnas -->
+            </tr>
+            <tr style="background-color: white;">
+                <th style="background-color: #71f163;">12:00-13:00</th>
+                <td rowspan="3">Programación</td> <!-- Celdas con atributo rowspan para unir filas -->
+                <td rowspan="3">Base de datos</td>
+                <td>Sostenibilidad</td>
+                <td rowspan="2">Programacion</td>
+                <td rowspan="3">Itinerario personal para la empleabilidad I</td>
+            </tr>
+            <tr style="background-color: white;">
+                <th style="background-color: #71f163;">13:00-14:00</th>
+                <td rowspan="2">Sistemas información</td>
+            </tr>
+            <tr style="background-color: white;">
+                <th style="background-color: #71f163;">14:00-15:00</th>
+                <td>Digitalizacion</td>
+            </tr>
+        </tbody>
+    </table>
+
+    </section>
+
+    <hr>
+
+    <section id="habilidades">
+        <header>
+        <h2 style="text-align: center;">Habilidades e intereses</h2>
+        </header>
+        <div>
+            <ul>
+                <li>Programación en <mark>HTML y CSS</mark></li>
+                <li>Trabajo en equipo y comunicación</li>
+                <li>Creatividad</li>
+                <li>Interés por la <em>fotografía</em> y el <em>diseño gráfico</em></li>
+            </ul>
+        </div>
+    </section>
+
+    <hr>
+
+    <section style="text-align: center;" id="contacto">
+        <header>
+        <h2 style="text-align: center;">Contacto y enlaces</h2>
+        </header>
+        <p>Puedes visitar mi perfil profesional en:</p>
+        <p>
+            <a href="https://github.com/amr0086-ale/1DAM_LMSGI_amr0086/tree/main/TEMA3/Ejemplo1" target="_blank">GitHub</a> |
+            <a href="https://amr0086-ale.github.io/1DAM_LMSGI_amr0086/TEMA3/Ejemplo1/EjercicioPerfilProfesional/html/index.html" target="_blank">Repositorio en nube</a>
+        </p>
+    </section>
+
+    <hr>
+
+    <section id="multimedia">
+        <header>
+        <h2 style="text-align: center;">Ubicación del centro</h2>
+        </header>
+        <p><b><small>Centro de estudios:</small></b></p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.6559334572057!2d-3.7883115888565517!3d37.798102371862555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6dd7dec3dd20ad%3A0x4fad82fdbe189c8!2sDavante%20MEDAC%20Aventura%20%F0%9F%A5%87%20Centro%20FP%20Ja%C3%A9n!5e0!3m2!1ses!2ses!4v1759925287001!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade></iframe>" 
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <footer>
+        <p><small>© 2025 - Alejandro Morales Rosas | Ejercicio “Mi Perfil Profesional”</small></p>
+    </footer>
+
+</body>
+</html>
