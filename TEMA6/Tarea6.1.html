@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peliculas TOP</title>
+
+<style>
+header { border: 2px solid red; padding: 10px; }
+
+nav { border: 2px solid green; padding: 5px; }
+
+main { border: 2px solid purple; padding: 10px; display: flex; justify-content: space-between; }
+
+section { border: 2px solid blue; padding: 10px; width: 70%; }
+
+article { border: 1px solid cyan; margin-bottom: 15px; padding: 10px; }
+
+aside { border: 2px solid orange; padding: 10px; width: 25%; }
+
+footer { border: 2px solid brown; padding: 10px; margin-top: 10px; }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+h1, h2, h3, h4 {
+    margin: 5px 0;
+}
+
+a {
+    color: purple;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+figure {
+    text-align: center;
+}
+</style>
+</head>     
+<body>
+    <header>
+        <h1>PELICULAS TOP</h1>
+    </header>
+
+    <nav>
+        <a href="#">PELICULAS</a>
+        <a href="#">OPINIONES</a>
+    </nav>
+
+    <main>
+        <section>
+            <h2>SECCIÓN PELICULAS</h2>
+
+            <article>
+                <h3>Black Phone 2</h3>
+                <p>Desde su secuestro, Finney, ahora con 17 años, lucha por volver a tener una vida normal, mientras su hermana Gwen, de 15, no quiere rendirse. Un extraño teléfono comienza a sonar en los sueños de Gwen, mostrándole a tres chicos perseguidos en un campamento de montaña llamado Alpine Lake.</p>
+                <figure>
+                    <video width="560" height="315" controls>
+                        <source src="../TEMA6/multimedia/black_phone_2.mp4" type="video/mp4">
+                </figure>
+            </article>
+
+            <article>
+                <h3>F1® La película</h3>
+                <p>Los críticos dicen que 'F1: La Película' ofrece secuencias de carreras emocionantes y una cinematografía impresionante, atrayendo tanto a fanáticos como a recién llegados. Sin embargo, muchos critican la trama poco realista, la falta de profundidad en los personajes y la excesiva dependencia de clichés. Algunos aprecian la inclusión de personal real de F1 y las perspectivas detrás de escena, mientras que otros encuentran que la representación de F1 en la película carece de autenticidad y profundidad. El equilibrio de la película entre entretenimiento y realismo es un punto de controversia, con algunos disfrutándolo como una película divertida y escapista, y otros sintiendo que no logra capturar la verdadera esencia de la Fórmula 1. En general, la película se considera una mezcla, con elementos visuales y auditivos fuertes pero una narrativa y desarrollo de personajes más débiles.</p>
+                <figure>
+                    <video width="560" height="315" controls>
+                        <source src="multimedia/f1_la_pelicula.mp4" type="video/mp4">
+                </figure>
+            </article>
+        </section>
+
+        <aside>
+            <h3>Publicidad</h3>
+            <p><strong style="font-size: 40px;">SUR</strong></p>
+            <h4>Fecha actual</h4>
+            <p>Hoy es 
+                <script>
+                    const fecha = new Date();
+                    document.write(fecha.toLocaleDateString());
+                </script>
+            </p>
+        </aside>
+    </main>
+
+    <footer>
+        <h4>Avisos legales</h4>
+        <p><a href="#">Política de cookies</a></p>
+
+        <h4>Redes sociales</h4>
+        <p><a href="#">FAQ (Preguntas frecuentes)</a></p>
+    </footer>
+</body>
+</html>
