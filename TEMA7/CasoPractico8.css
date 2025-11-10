@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Título principal */
+.titulo {
+  border: 2px solid blue;
+  text-align: center;
+  padding: 10px;
+  width: 300px;
+  margin: 20px auto;
+}
+
+/* Preguntas */
+.pregunta {
+  background-color: #ccc;
+  padding: 5px;
+}
+
+/* La primera pregunta tiene formato diferente */
+.especial {
+  background-color: lightgray;
+  border-left: 5px solid darkgray;
+}
+
+/* Respuestas */
+.correcta {
+  color: green;
+  font-weight: bold;
+}
+
+.incorrecta {
+  color: red;
+  font-weight: bold;
+}
+
+/* Sección de instrucciones */
+#instrucciones {
+  background-color: cyan;
+  padding: 5px;
+}
